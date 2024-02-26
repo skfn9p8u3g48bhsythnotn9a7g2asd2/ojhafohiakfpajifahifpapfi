@@ -141,14 +141,7 @@ function library:Tween(...)
     tweenService:Create(...):Play()
 end
 
-local Notify_Protect_Path;
-if Menu_Info.Text.Game == "Trident" then 
-    local Main_Ui_Folder = Instance.new("Folder", Player_Gui.GameUI);
-    Main_Ui_Folder.Name = "Main_Ui_Folder";
-    Notify_Protect_Path = Main_Ui_Folder;
-else 
-    Notify_Protect_Path = Core_Gui;
-end;
+local Notify_Protect_Path = Core_Gui;
 
 local Notify_List = Instance.new("ScreenGui")
 local Notify_List_UIListLayout = Instance.new("UIListLayout")
